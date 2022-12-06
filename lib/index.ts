@@ -130,10 +130,10 @@ export class ABA {
                 creditTotal += transaction.amount || 0;
             }
         }
-        if (creditTotal !== footer.creditTotal) {
+        if (parseFloat((creditTotal).toFixed(2)) !== footer.creditTotal) {
             return fail("Batch creditTotal mismatch");
         }
-        if (debitTotal !== footer.debitTotal) {
+        if (parseFloat((debitTotal).toFixed(2)) !== footer.debitTotal) {
             return fail("Batch debitTotal mismatch");
         }
         return { success: true, code: "VALID_BATCH", message: "Batch looks valid" };
