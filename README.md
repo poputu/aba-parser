@@ -119,7 +119,7 @@ customSchemas = {
   },
 };
 
-const aba = new ABA({ schemas: customSchmas });
+const aba = new ABA({ schemas: customSchemas });
 ```
 
 ### Custom schema use example

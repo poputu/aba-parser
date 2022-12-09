@@ -4,7 +4,7 @@ const defaultAbaSchemas = {
         fields: [
             { name: "bsb", boundaries: [1, 8], type: "bsb" },
             { name: "account", boundaries: [8, 17], type: "string" },
-            { name: "sequenceNumber", boundaries: [19, 20], type: "integer" },
+            { name: "sequenceNumber", boundaries: [18, 20], type: "integer" },
             { name: "bank", boundaries: [20, 23], type: "string" },
             { name: "user", boundaries: [30, 56], type: "string" },
             { name: "userNumber", boundaries: [56, 62], type: "string" },
